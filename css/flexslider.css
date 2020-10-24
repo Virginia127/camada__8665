@@ -98,7 +98,7 @@
   .flex-direction-nav a:before {
 	content: " ";
 	display: block;
-	background: url('../img/prevcam.svg') no-repeat center center;
+	background: url('../img/prev.svg') no-repeat center center;
 	background-size: contain;
     width: 35px;
 	height: 35px;
@@ -106,7 +106,7 @@
   .flex-direction-nav a.flex-next:before {
 	content: " ";
 	display: block;
-	background: url("../img/nextcam.svg") no-repeat center center;
+	background: url("../img/next.svg") no-repeat center center;
 	background-size: contain;
     width: 35px;
 	height: 35px;
