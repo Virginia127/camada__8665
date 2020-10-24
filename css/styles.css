@@ -1,0 +1,18 @@
+button {
+  color: white;
+  padding: 1em;
+  border: 0;
+  cursor: pointer;
+  background:#747172;
+}
+
+button.active {
+  background:#dd6a31;
+}
+
+
+@media (min-width: 700px) {
+  button {
+    display: none;
+  }
+}

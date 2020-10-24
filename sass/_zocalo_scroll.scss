@@ -1,0 +1,83 @@
+/*mixims*/
+@mixin zocaloScroll ($imgpath, $min-heigh, $background-size, $background-position, $background-attachment, $position, $margin-botton, $margin-top){
+    background-image: url($imgpath);
+    min-height: $min-heigh;
+    background-size: $background-size;
+    background-position: $background-position;
+    background-attachment: $background-attachment;  
+    position: $position;
+    margin-bottom: $margin-botton;
+    margin-top: $margin-top;
+  }
+ 
+.img__zocaloScroll--mobiliario{
+    @include zocaloScroll("../img/f_scroll/mobilidario.jpg",45vh, cover, center center,fixed, relative, 6%, 0.1%);
+}
+.img__zocaloScroll--vallados{
+    @include zocaloScroll("../img/f_scroll/vallados.jpg",45vh, cover, center center,fixed, relative, 6%, 4%);
+    width: 100%;
+}
+.img__zocaloScroll--subtes_trenes{
+    @include zocaloScroll("../img/f_scroll/trenes.jpg",45vh, cover, center center,fixed, relative, 6%, 4%);
+    width: 100%;
+}
+.img__zocaloScroll--moviles_carteles{
+    @include zocaloScroll("../img/f_scroll/carteles.jpg",45vh, cover, center center,fixed, relative, 6%, 4%);
+    width: 100%;
+}
+.mapa__zocaloScroll--geoplaning{
+  @include zocaloScroll("../img/f_scroll/geoplaning2.jpg",45vh, cover, center center,fixed, relative, 6%, -1.8%);
+  width: 100%;
+}
+/*filtro*/
+%filtro_zocaloScroll {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: rgb(49, 56, 63, 0.3);
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  #formatos .img__zocaloScroll--mobiliario::before {
+    @extend %filtro_zocaloScroll;
+}
+  #formatos .img__zocaloScroll--vallados::before {
+    @extend %filtro_zocaloScroll;
+}
+#formatos .img__zocaloScroll--subtes_trenes::before {
+    @extend %filtro_zocaloScroll;
+}
+  #formatos .img__zocaloScroll--moviles_carteles::before {
+    @extend %filtro_zocaloScroll;
+}
+#servicios .mapa__zocaloScroll--geoplaning::before {
+  @extend %filtro_zocaloScroll;
+  background: rgb(49, 56, 63, 0.2);
+}
+
+#formatos #mobiliario_urbano:target { 
+    padding-top: 128px; 
+  }
+  #formatos #vallados:target { 
+    padding-top: 128px; 
+  }
+  #formatos #subtes_trenes:target { 
+    padding-top: 128px; 
+  }
+
+  #formatos #moviles_carteles:target { 
+    padding-top: 128px; 
+  }
+  #servicios #planificacion:target { 
+    padding-top: 90px; 
+  }
+
+  #contacto div .banner_top_gris {
+    background-color: #F2F4F6;
+    padding-top: 50px;
+    padding-bottom: 25px;
+    text-align: center;
+    margin-bottom: 40px;
+  }

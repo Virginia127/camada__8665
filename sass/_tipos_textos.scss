@@ -1,0 +1,184 @@
+/*general*/
+/*texto bajada secciones_campañas*/
+/*placeholder*/
+a{
+  text-decoration: none;
+}
+/*home punto*/
+
+
+%orange{
+  color: $orange-amarillo-punto;
+  font-size: 3rem;
+  }
+.orange_titulo{
+  @extend %orange;
+  padding-left: 0.2rem;
+}
+
+#orange_point{
+  font-size: 4rem;
+  padding-left: 0.2rem;
+  color: $orange-principal;
+  font-family:$font_titulo;
+}
+.orange_titulo-ceo{
+  padding-left: 0.2rem;
+  color: $orange-principal;
+  font-family:$font_titulo;
+  font-size: 3rem;
+}
+
+#orange_point-secciones{
+  font-size: 3rem;
+  padding-left: 0.2rem;
+  color: $orange-principal;
+  font-family:$font_titulo;
+}
+
+%nosotros_titulo {
+  font-family: 'Lato', sans-serif;
+  font-size: 1.5rem;
+  line-height: 1.2rem;
+  font-weight: 600;
+  letter-spacing: 0.8px;
+  word-spacing: 0.2rem;
+  text-align: left;
+  color: #31383f;
+}
+.nosotros_titulo--2 {
+  @extend %nosotros_titulo;
+  padding-top: 2rem;
+}
+
+.nosotros_titulo--1 {
+  @extend %nosotros_titulo;
+  padding-top: 0rem;
+  padding-bottom: 0.8rem;
+}
+.servicios_titulo--1 {
+  @extend %nosotros_titulo;
+}
+.servicios_titulo--2 {
+  @extend %nosotros_titulo;
+  padding-top: 2rem;
+}
+
+%nosotros_parrafo--1 {
+  color: #31383f;
+  font-family: 'Raleway', sans-serif;
+  font-size: 0.95rem;
+  letter-spacing: 0.2px;
+  text-align: left;
+}
+.nosotros_parrafo--1 {
+  @extend %nosotros_parrafo--1;
+}
+.nosotros_parrafo--2 {
+  @extend %nosotros_parrafo--1;
+  padding-top: 0.8rem;
+}
+.servicios_parrafo--1 {
+  @extend %nosotros_parrafo--1;
+  font-family: 'Raleway', sans-serif;
+  padding-top: 0.8rem;
+  margin-right:6rem;
+}
+
+#planificacion .texto4_li {
+  @extend %nosotros_parrafo--1;
+  font-family: 'Raleway', sans-serif;
+  margin-right: 6rem;
+  
+}
+
+.span.texto4_li{
+  display: block;
+}
+
+
+
+/*HTML SECCIONES_TITULOS*/
+
+%titulo_seccion{
+font-family:$font_titulo;
+font-size: $seccion_font-size;
+font-weight: 600;
+letter-spacing: 0.8px;
+word-spacing: 0.2rem;
+color: $azul-titulo;
+text-align: center;
+}
+
+.titulo__seccion--s {
+  @extend %titulo_seccion;
+  padding-top: 2.1rem;
+}
+
+.titulo__seccion--f {
+  @extend %titulo_seccion;
+  padding-top: 2.4rem;
+}
+
+.titulo__seccion--c{
+  @extend %titulo_seccion;
+  padding-top: 100px;
+}
+
+.titulo__seccion--co {
+  @extend %titulo_seccion;
+}
+
+/*texto bajada secciones_campañas*/
+%bajada_seccion{
+  color: #747172;
+  font-family: $font-texto;
+  font-size: 1rem;
+  padding-top: 0.5rem;
+  letter-spacing: 0.2px;
+  margin-left: 25%;
+  margin-right: 25%;
+  text-align: center;
+} 
+.bajada__titulo__seccion--s{
+  @extend %bajada_seccion;
+  padding-top: 0.5rem;
+} 
+.bajada__titulo__seccion--f{
+  @extend %bajada_seccion;
+} 
+.bajada__titulo__seccion--c{
+  @extend %bajada_seccion;
+} 
+.bajada__titulo__seccion--co{
+  @extend %bajada_seccion;
+  margin-left: 30%;
+  margin-right: 30%;
+} 
+
+/*formato link de img scroll mobiliario en estilos.css porque me cambia los colores*/
+  
+
+/*4 FORMATOS_títulos -textos*/
+#formatos .formatos__card__titulo {
+    font-family:$font_titulo;
+    font-size: 0.8rem;
+    padding-bottom: 2px;
+    padding-top: 0.4rem;  
+    font-weight: 900;
+}
+
+/*textos*/
+#formatos .formatos__card__titulo--texto{
+  @extend .formatos__card__titulo;
+  font-family: $font_texto;
+  font-size: 0.78rem;
+  font-weight: 400;
+  line-height: 0.7rem;
+  color:$gris-principal;
+  padding-top: 5px;
+}
+
+/*titulos albunes izquierda*/
+
+

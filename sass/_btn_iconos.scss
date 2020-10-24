@@ -1,0 +1,212 @@
+
+
+
+/*4_FORMATO ver más ets*/
+.formatos__btn {
+  width: 60px;
+  padding-top: 25px;
+  margin-top: 10px;
+  margin-left: 0px;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  cursor: pointer;
+  padding: 6px 6px 6px 6px;
+  border: none;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  font-family: $font-btn;
+  font-size: 0.6rem;
+  font-weight: 800;
+  color: $blanco;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  background:$azul-boton;
+  -webkit-transition: background 0.2s cubic-bezier(0.25, 0.25, 0.75, 0.75);
+  -moz-transition: background 0.2s cubic-bezier(0.25, 0.25, 0.75, 0.75);
+  -o-transition: background 0.2s cubic-bezier(0.25, 0.25, 0.75, 0.75);
+  transition: background 0.2s cubic-bezier(0.25, 0.25, 0.75, 0.75);
+  display: block;
+
+  &.formatos__btn:hover {
+    background: $azul-boton-hover;
+    }
+}
+    .formatos__btn--a {
+      @extend .formatos__btn;
+      width: 32px;
+      margin-left: 8px;
+    
+  &.formatos__btn--a:hover {
+    background: $azul-boton-hover;
+    }
+}
+#formatos .icono-dialogo {
+  padding-top: 0.7rem;
+}
+
+.bi-chat-right-text-fill{
+  padding-top: 0.4rem;
+
+  &.bi-chat-right-text-fill:hover{
+    color: $azul-boton-hover;
+  }
+}
+
+/*5_CONTACTO whatsapp*/
+.whatsapp {
+    position:fixed;
+    width:60px;
+    height:60px;
+    bottom:19%;
+    right:90px;
+    background-color: $whats_click;
+    border-color:$blanco;
+    color:$blanco;
+    border-radius:50px;
+    text-align:center;
+    font-size:2rem;
+    z-index:100;
+
+    &.whatsapp:hover{
+      background-color:$whats_hover;
+      color:$blanco;
+    }
+  .whatsapp-icon {
+    margin-top:14px;
+  }
+}
+
+.fa-color{
+  color:#007bff;
+}
+.feature-list i, .orange-icons i { 
+  color:#007bff;
+}
+
+
+#home .home_btn_index {
+  width: 100px;
+  padding-top: 15px;
+  margin-top: 20px;
+  margin-left: 0px;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  cursor: pointer;
+  padding: 8px 8px 8px 8px;
+  border: none;
+  -webkit-border-radius: 25px;
+  border-radius: 3px;
+  font-family:'Open Sans', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color:#fff;
+  background:#ff6a00;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  -webkit-transition: background 0.2s cubic-bezier(0.25, 0.25, 0.75, 0.75);
+  -moz-transition: background 0.2s cubic-bezier(0.25, 0.25, 0.75, 0.75);
+  -o-transition: background 0.2s cubic-bezier(0.25, 0.25, 0.75, 0.75);
+  transition: background 0.2s cubic-bezier(0.25, 0.25, 0.75, 0.75);
+  display: block;
+}
+#home .home_btn_index a{
+  text-decoration: none;
+  outline:none;
+}
+
+#home .home_btn_index:hover {
+  color:#fff;
+  background: #007bff;
+  text-decoration: none;
+}
+
+#contacto .contacto_btn {
+  width: 80px;
+  padding-top: 15px;
+  margin-top: 20px;
+  margin-left: 0px;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  cursor: pointer;
+  padding: 8px 8px 8px 8px;
+  border: none;
+  -webkit-border-radius: 25px;
+  border-radius: 3px;
+  font-family:'Open Sans', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color:#fff;
+  background:#ff6a00;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  -webkit-transition: background 0.2s cubic-bezier(0.25, 0.25, 0.75, 0.75);
+  -moz-transition: background 0.2s cubic-bezier(0.25, 0.25, 0.75, 0.75);
+  -o-transition: background 0.2s cubic-bezier(0.25, 0.25, 0.75, 0.75);
+  transition: background 0.2s cubic-bezier(0.25, 0.25, 0.75, 0.75);
+  display: block;
+}
+#contacto .contacto_btn a{
+  text-decoration: none;
+  outline:none;
+}
+
+#contacto .contacto_btn:hover {
+  color:#fff;
+  background: #007bff;
+  text-decoration: none;
+}
+#cotiza .servicios_btn_cotizar {
+  width: 190px;
+  margin-left: auto;
+  margin-right:auto;
+  margin-bottom: 0;
+  padding-top: 15px;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  cursor: pointer;
+  padding: 8px 8px 8px 8px;
+  border: none;
+  -webkit-border-radius: 25px;
+  border-radius: 3px;
+  font-family:'Open Sans', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color:#fff;
+  background:#ff6a00;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  -webkit-transition: background 0.2s cubic-bezier(0.25, 0.25, 0.75, 0.75);
+  -moz-transition: background 0.2s cubic-bezier(0.25, 0.25, 0.75, 0.75);
+  -o-transition: background 0.2s cubic-bezier(0.25, 0.25, 0.75, 0.75);
+  transition: background 0.2s cubic-bezier(0.25, 0.25, 0.75, 0.75);
+  display: block;
+}
+#cotiza .servicios_btn_cotizar a{
+  text-decoration: none;
+  outline:none;
+}
+
+#cotiza .servicios_btn_cotizar:hover {
+  color:#fff;
+  background: #007bff;
+  text-decoration: none;
+}
+@media (max-width: 768px) {
+  /* EMPIEZA EL MENÚ MOBILE */
+}
