@@ -802,8 +802,8 @@ li .texto4_li{
   border-radius: 50%;
   border: 4px solid #fff;
 }
-.bluequote{
-  width: 5rem;
+.bluequote{ /*ver*/
+  width: 7.2rem;
   height: auto;
   padding-bottom: 1rem;
 }
@@ -1126,9 +1126,9 @@ li .texto4_li{
 
 /* Declare heights because of positioning of img element */
 .carousel-item {
-  height: 28em;
-  margin-top: 4rem;
-  transition: all 0.4s ease-in-out;
+  height: 29rem;
+  margin-top: 3rem;
+  transition: all 0.5s ease-in-out;
   margin-bottom: 6px;
 }
 .carousel-caption p {
@@ -1153,9 +1153,9 @@ li .texto4_li{
 
 
 .bluequote{
-  width: 7rem;
+  width: 7.2rem;
   height: auto;
-  padding-bottom: 1rem;
+  padding-bottom: 0.8rem;
   padding-top:2rem;
 }
 
@@ -1164,6 +1164,7 @@ li .texto4_li{
   height: 12px;
   border-radius: 50%;
   color:#747172;
+  margin-bottom: 1rem;
 }
 
 .comentario {
@@ -1174,8 +1175,7 @@ li .texto4_li{
     font-weight: 400;
     text-align: center;
     line-height: 2.1rem;
-    margin-left: 6rem;
-    margin-right: 6rem;
+    margin: auto;
     padding-top:0.8rem;
 }
 
