@@ -2226,20 +2226,20 @@ a.mailto:hover {
   right: 15px;
 }
 
-.mobile-nav .active.drop-down > a:after {
+.mobile-nav .active > a:after {
   content: "\f077";
 }
 
-.mobile-nav .drop-down > a {
+.mobile-nav  > a {
   padding-right: 35px;
 }
 
-.mobile-nav .drop-down ul {
+.mobile-nav  ul {
   display: none;
   overflow: hidden;
 }
 
-.mobile-nav .drop-down li {
+.mobile-nav  li {
   padding-left: 20px;
 }
 
