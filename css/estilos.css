@@ -102,6 +102,7 @@ h1, h2, h3, h4, h5, h6, p{
     background-color:#31383f;
     opacity: 1;
 }
+/*
 #button-up{
   width: 45px;
   height: 45px;
@@ -123,8 +124,40 @@ h1, h2, h3, h4, h5, h6, p{
 
 #button-up:hover{
   transform: scale(1.1);
+}*/
+
+.back-to-top {
+  position: fixed;
+  display: none;
+  background: #007bff;
+  color: #fff;
+  width: 45px;
+  height: 45px;
+  text-align: center;
+  line-height: 1;
+  font-size: 1rem;
+  border-radius: 50%;
+  right: 70px;
+  bottom: 135px;
+  transition: all 200ms ease;;
+  z-index: 11;
+  border: 4px solid transparent;
+  transform: scale(1);
+}
+.back-to-top:hover{
+  transform: scale(1.1);
 }
 
+.back-to-top i {
+  padding-top: 11px;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .back-to-top {
+    bottom: 15px;
+  }
+}
 /*--------------------------------------------------------------
         OK_INDEX:INICIA HEADER + MENU NAVIGATION + MAIN SCROLL
 --------------------------------------------------------------*/
@@ -324,34 +357,8 @@ h1, h2, h3, h4, h5, h6, p{
   bottom: 0;
   z-index: -1;
 }
-/* Back to top button 
-.back-to-top {
-  position: fixed;
-  display: none;
-  background: #007bff;
-  color: #fff;
-  width: 44px;
-  height: 44px;
-  text-align: center;
-  line-height: 1;
-  font-size: 16px;
-  border-radius: 50%;
-  right: 15px;
-  bottom: 15px;
-  transition: background 0.5s;
-  z-index: 11;
-}
+/* Back to top button */
 
-.back-to-top i {
-  padding-top: 12px;
-  color: #fff;
-}
-
-@media (max-width: 768px) {
-  .back-to-top {
-    bottom: 15px;
-  }
-}*/
 
 
 
@@ -388,7 +395,7 @@ h1, h2, h3, h4, h5, h6, p{
 .workers {  
   background: url("");
   min-height: 54.40677966101695vh;
-  min-width: 40.75vw;
+  min-width: auto;
   background-size: 100%;
   background-position: center center;
   background-attachment: fixed;   /* Makes the image fixed in the viewport so that it doesn't move when*/
@@ -398,7 +405,7 @@ h1, h2, h3, h4, h5, h6, p{
 /*img-box*/
 .workers {
   min-width: 40.75vw;
-  height: 318px;
+  height: auto;
   overflow: hidden;
 }
 .workers img {
@@ -655,7 +662,7 @@ overflow: hidden;
   background:#fff4df;
   width: 100%;
   height: auto;
-  padding: 70px 20px 60px 20px;
+  padding: 70px 20px 55px 20px;
   margin-top: 3rem;
   margin-bottom: 4rem;
   box-sizing: border-box; 
@@ -858,6 +865,31 @@ li .texto4_li{
   padding: 30px ;
   padding-right:18px;
   }
+  }
+
+  .workers {  
+    background: url("");
+    min-height: 100%;
+    min-width: 100%;
+    background-size: 100%;
+    background-position: center center;
+    background-attachment: fixed;   /* Makes the image fixed in the viewport so that it doesn't move when*/
+    position: relative;
+    margin-bottom: 8%;
+  }
+  /*img-box*/
+
+@media (max-width: 767px) {
+.box_zoom {
+    width: 402px;
+    height: auto;
+    overflow: hidden;
+    margin: 0;
+  }
+img .workers_img{
+  width: 402px;
+  height: auto;
+}
   }
 
 
@@ -1258,7 +1290,69 @@ li .texto4_li{
   text-decoration: none;
   color:#505458;
   font-weight: 600;
+}
 
+@media (min-width: 768px) {
+.boton {
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+  }
+/*numeros telefonos*/
+
+/*telefono/dires*/
+.contacto-text {	
+  margin-top: 1rem;
+  padding-bottom: 5px;
+  letter-spacing: 1px;
+}
+/*celular_ventas*/
+#contacto .contacto-text p.sub_title{	
+  font-family: 'Open sans', sans-serif;
+  font-weight: 300;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  color:#747172;
+}
+
+#contacto .contacto-list {
+    margin-top:0px; 
+    padding-top:0px;
+    list-style:none;
+}
+
+#contacto .contacto-list li {
+    margin-bottom:10px;
+    font-family:"Open Sans", sans-serif;
+    font-size: 0.9rem;
+    color:#31383f;
+}
+
+#contacto .contacto-list i {
+    color:#fff;
+    padding:5px; 
+    border-radius:5px; 
+    background:#31383f; 
+    width: 26px;  /*esto es el ícono*/
+    text-align: center; 
+    height: 26px; 
+    margin-right:10px; 
+}
+#contacto .contacto-list li a {
+  list-style:none;
+}
+
+#contacto .contacto-list a {
+  font-family: 'Open Sans', sans-serif;
+  color:#505458;
+}
+
+#contacto .contacto-list a:hover {
+  font-family: 'Open Sans', sans-serif;
+  font-style: italic;
+  text-decoration: none;
+  color:#505458;
+  font-weight: 600;
+}
 }
 
 .feature-contacto-list i, .orange-icons i { 
@@ -1602,6 +1696,14 @@ input[type=checkbox] + label {
 input[type=checkbox]:checked + label {
   color: #dd6a31;
   font-style: normal;
+}
+
+@media (min-width: 768px) {
+  .button {
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+  }
+
 }
 /*                  TERMINA CONTACTO
 --------------------------------------------------------------*/
