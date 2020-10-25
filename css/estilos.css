@@ -324,6 +324,36 @@ h1, h2, h3, h4, h5, h6, p{
   bottom: 0;
   z-index: -1;
 }
+/* Back to top button 
+.back-to-top {
+  position: fixed;
+  display: none;
+  background: #007bff;
+  color: #fff;
+  width: 44px;
+  height: 44px;
+  text-align: center;
+  line-height: 1;
+  font-size: 16px;
+  border-radius: 50%;
+  right: 15px;
+  bottom: 15px;
+  transition: background 0.5s;
+  z-index: 11;
+}
+
+.back-to-top i {
+  padding-top: 12px;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .back-to-top {
+    bottom: 15px;
+  }
+}*/
+
+
 
 /*                 OK_INDEX:Termina MENU + HOME
 --------------------------------------------------------------*/
@@ -669,8 +699,10 @@ EMPIEZA SERVICIOS
   padding-top: 0rem;
 }
 
-.contenedor_2 {
-    margin: auto;
+.icono-servicios{
+    float: right;
+    padding-top: 7px;
+    padding-right:18px;
 }
 
 #servicios .contenedor ul {
@@ -750,13 +782,87 @@ li .texto4_li{
 .servicios_margin-bottom{
   padding-bottom: 2.5rem;
 }
-.servicios_margin-top:{
+.servicios_margin-top{
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
 .pb_5{
   padding-bottom: 2rem;
 }
+/*servicios carrousel*/
+
+@media (max-width: 767px) {
+  #comment .carousel-item {
+    margin: auto;
+  }
+}
+
+#comment .carousel-item .testimonial-img {
+  width: 120px;
+  border-radius: 50%;
+  border: 4px solid #fff;
+}
+.bluequote{
+  width: 5rem;
+  height: auto;
+  padding-bottom: 1rem;
+}
+
+@media (max-width: 767px) {
+  #comment .carousel-item .testimonial-img {
+    float: none;
+    margin: auto;
+  }
+
+#comment .carousel-item p {
+  font-style: italic;
+  margin: 0 0 15px 140px;
+  font-size: 1rem;
+}
+}
+
+@media (min-width: 992px) {
+  #comment .carousel-item p {
+    width: 70%;
+  }
+}
+
+@media (max-width: 767px) {
+  #comment .carousel-item h2, #comment .carousel-item h4, #comment .carousel-item p {
+    margin-left: 0;
+    margin: auto;
+  }
+}
+
+@media (max-width: 767px) {
+ #planificacion .servicios_titulo--1, #planificacion .servicios_parrafo--1 {
+    text-align: center;
+    width: 90%;
+    margin:auto;
+  }
+
+#planificacion .titulo_bloque_waves-servicios, #planificacion .mskd, #planificacion .txt, #planificacion span{
+  display: none;
+  margin: auto;
+  }
+.servicios_margin-bottom{
+    padding-bottom: 1rem;
+  }
+
+.themed-grid-col{
+    margin: auto;
+  }
+
+.icono-servicios{
+  margin-right: 120px;
+  padding: 30px ;
+  padding-right:18px;
+  }
+  }
+
+
+
+/*ver*/
 
 
 /*--------------------------------------------------------------
@@ -1020,7 +1126,7 @@ li .texto4_li{
 
 /* Declare heights because of positioning of img element */
 .carousel-item {
-  height: 26rem;
+  height: 28em;
   margin-top: 4rem;
   transition: all 0.4s ease-in-out;
   margin-bottom: 6px;
@@ -1030,6 +1136,13 @@ li .texto4_li{
   font-size: 1.25rem;
   line-height: 1.4;
 }
+.credit{
+  font-size:0.9rem;
+  font-style:normal;
+  font-weight:400;
+  color:#f7e6c7;
+  padding-bottom: 1.5rem;
+}
 
 @media (min-width: 40em) {
   /* Bump up size of carousel content */
@@ -1038,17 +1151,12 @@ li .texto4_li{
 
 /*bootstrap carrousel*/
 
-.credit{
-    font-size:0.9rem;
-    font-style:normal;
-    font-weight:400;
-    color:#f7e6c7;
-    padding-bottom: 1.5rem;
-}
+
 .bluequote{
-  width: 5rem;
+  width: 7rem;
   height: auto;
   padding-bottom: 1rem;
+  padding-top:2rem;
 }
 
 #myCarousel .carousel-indicators li{
@@ -1609,6 +1717,9 @@ input[type=checkbox]:checked + label {
     text-decoration: none;
     font-size: 1rem;
     }
+.credito p{
+  margin:auto;
+}
 /*filtro index mural */
 
 
