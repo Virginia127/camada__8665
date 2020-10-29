@@ -1,6 +1,3 @@
-
-
-
 /*4_FORMATO ver más ets*/
 .formatos__btn {
   width: 60px;
@@ -128,8 +125,8 @@
   text-decoration: none;
 }
 
-#contacto .contacto_btn {
-  width: 80px;
+.contacto_btn-footer {
+  width: 77px;
   padding-top: 15px;
   margin-top: 20px;
   margin-left: 0px;
@@ -157,16 +154,17 @@
   transition: background 0.2s cubic-bezier(0.25, 0.25, 0.75, 0.75);
   display: block;
 }
-#contacto .contacto_btn a{
+#contacto .contacto_btn-footer a{
   text-decoration: none;
   outline:none;
 }
 
-#contacto .contacto_btn:hover {
+#contacto .contacto_btn-footer:hover {
   color:#fff;
   background: #007bff;
   text-decoration: none;
 }
+
 #cotiza .servicios_btn_cotizar {
   width: 190px;
   margin-left: auto;

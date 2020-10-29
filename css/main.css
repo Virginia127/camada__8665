@@ -398,8 +398,8 @@ a {
   text-decoration: none;
 }
 
-#contacto .contacto_btn {
-  width: 80px;
+.contacto_btn-footer {
+  width: 77px;
   padding-top: 15px;
   margin-top: 20px;
   margin-left: 0px;
@@ -421,12 +421,12 @@ a {
   display: block;
 }
 
-#contacto .contacto_btn a {
+#contacto .contacto_btn-footer a {
   text-decoration: none;
   outline: none;
 }
 
-#contacto .contacto_btn:hover {
+#contacto .contacto_btn-footer:hover {
   color: #fff;
   background: #007bff;
   text-decoration: none;

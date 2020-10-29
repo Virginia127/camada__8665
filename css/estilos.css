@@ -1883,49 +1883,32 @@ input[type=checkbox]:checked + label {
                   INICIA FOOTER CONTACTO_LINKS_SUBMIT
 --------------------------------------------------------------*/
 
-.area_footer_contacto_100 {
+.footer-top {
+    padding: 20px 0 15px 0;
     background-color: #a19d9f;
-    width: 100%;
-    padding-top:12px;
-    padding-bottom:0px;
-    height: 210px;
-    box-sizing: border-box; 
-    margin-top: 0px;
 }
 
-.contenedor_footer_copyright_90{ 
-    width: 93%;
-    margin: auto;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: space-between;
-}
+/*footer agencia*/
 
-.grid_footer {
-    display: grid;
-    margin:auto;
-    width: 93%;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    grid-column-gap: 30px;
-    display: flex;
+#contacto .footer-contact{
+  color: #31383f;
+  text-transform: none;
+  font-family: 'Lato', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  box-sizing: border-box;
+  align-self: end;
+  font-size: 0.75rem;
+  line-height: 1.15rem;
+  padding-top: 2rem;
 }
-.grid_footer span {
-    display: block;
+.adress {
+  display: block;
 }
-.col { 
-    background: none; 
-    padding-top: 1rem ; 
-    text-align:left;
-    flex-direction:row;
-    padding-bottom: 0.8rem ; 
-
-}
-/*footer_adress*/
 
 .titulo--adress {
     font-family: 'Lato', sans-serif;
-    font-size: 0.8rem;
+    font-size: 0.85rem;
     font-weight: 650; 
     margin-inline-end: 1.5rem;
     line-height: 1.3rem;
@@ -1933,33 +1916,15 @@ input[type=checkbox]:checked + label {
     padding-top: 1.5rem;
     letter-spacing: 0.8px;
     text-transform: lowercase;
+    padding-bottom: 2rem;
 }
 
 .titulo--adress ::after{
     content:"";
     display: block;
-    width: 49px;
+    width: 51px;
     height: 3px;
     background: #31383f;
-}
-
-.adress_right_1_de_3{
-    color: #31383f;
-    text-transform: none;
-    font-family: 'Lato', sans-serif;
-    font-size: 0.7rem;
-    font-weight: 600;
-    box-sizing: border-box;
-    align-self: end;
-    font-size: 0.75rem;
-    line-height: 1.15rem;
-    padding-top: 2rem;
-}
-.adress_right_1_de_3 { 
-    width: 30%; 
-    display:flex;
-    box-sizing: border-box;
-    flex-direction:row;
 }
 .mailto {
     color: #31383f;
@@ -1977,7 +1942,7 @@ a.mailto:hover {
 
 .titulo--links{
   font-family: 'Lato', sans-serif;
-  font-size: 0.8rem;
+  font-size: 0.85rem;
   font-weight: 650; 
   margin-inline-end: 1.5rem;
   line-height: 1.3rem;
@@ -1985,61 +1950,102 @@ a.mailto:hover {
   padding-top: 1.5rem;
   letter-spacing: 0.8px;
   text-transform: lowercase;
+  padding-bottom: 2rem;
 }
-
 .titulo--links ::after{
   content:"";
   display: block;
-  width: 66px;
+  width: 73px;
   height: 3px;
   background: #31383f;
 }
-.links_center_2_de_3{
-  padding-top: 2rem;
-  width: 22%; 
-  display:flex;
-  box-sizing: border-box;
-  flex-direction:row;
-  align-items: flex-start;
+.footer-newsletter{
+  font-family: 'Lato', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 650; 
+  margin-inline-end: 1.5rem;
+  line-height: 1.3rem;
+  color: #31383f;
+  padding-top: 1.5rem;
+  letter-spacing: 0.8px;
+  padding-bottom: 2rem;
+  }
+
+.titulo--adress--newsletter::after{
+content:"";
+display: block;
+width: 73px;
+height: 3px;
+background: #31383f;
 }
 
-.links_center_2_de_3 ul li {
+.footer-links, .footer-newsletter{
+  padding-top: 2rem;
+  
+}
+
+.footer-links ul li {
     list-style-type: none;
     text-transform: none;
-    align-self: flex-start;
     line-height: 1rem;
 }
 
-.links_center_2_de_3  ul li a {
+.footer-links  ul li a {
     color: #31383f;
     font-family: 'Open Sans', sans-serif;
     font-size: 0.75rem;
     font-weight: 600;
 }
-.links_center_2_de_3 ul li a:hover {
+.footer-links ul li a:hover {
     text-decoration: none;
     color:#fff;
     font-size: 0.75rem;
 }
 
-.skyline_right_3_de_3 {
-    width: 38%; 
-    display:flex;
-    box-sizing: border-box;
-    flex-direction:row;
-    padding-top: 0.3rem; 
 
-  }
-  .skyline_right_3_de_3 img{
-    align-items: flex-start;
- }
+.bajada_titulo--footer {
+  color: #31383f;
+  text-transform: none;
+  font-family: 'Lato', sans-serif;
+  font-size: 0.7rem;
+  font-weight: 600;
+  box-sizing: border-box;
+  align-self: end;
+  font-size: 0.75rem;
+  line-height: 1.15rem;
+  padding-top: 0.8rem;
+}
+
+#contacto  .footer-newsletter input[type="email"] {
+  border: 0;
+  padding: 6px 8px;
+  width: 50%;
+  border-radius: 3px;
+  margin-top: 1rem;
+}
+
+#contacto .footer-newsletter input[type="submit"] {
+  border: 0;
+  width: 30%;
+  padding: 6px 6px;
+  text-align: center;
+  color: #fff;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+#contacto .footer-newsletter input[type="submit"]:hover {
+  background:#007bff;
+}
+
+
 
 /*                  TERMINA FOOTER LINKS
 --------------------------------------------------------------*/
 
 /*--------------------------------------------------------------
                   OK INICIA FOOTER COPYRIGHT                  */
-#footer .copyright{
+#contacto .copyright{
     background-color: #24323f;
     box-sizing: border-box; 
 }
