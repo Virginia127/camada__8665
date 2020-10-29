@@ -52,8 +52,6 @@
 <!--Stylesheet Animation animate.style/--><!--wow-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.0/animate.min.css"/>
     <link rel="stylesheet" href="css/animate.css">
-   <!--   greensock.com -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
 </head>
 
 
@@ -61,25 +59,21 @@
 <body>
     <header id="header" class="fixed-top">
         <div class="container-fuid">
-                <div id="icon_open">
                     <div class="menu_nav_ancho"> 
                         <div class="logo float-left">
                         <a href="index.html" class="logo"> <img src="img/logo_next_3.png" alt="isologo" class="img-fluid"></a>
                         </div>   
-                        <div class="menu menu_float_right">
-                            <nav class="main-nav d-none d-lg-block">
-                                <ul class="lista">
-                                    <li class="#"><a href="index.html" class="active">home</a></li>
+                        <nav class="main-nav float-right d-none d-lg-block">
+                            <ul>
+                                    <li><a href="index.html" class="active">home</a></li>
                                     <li class="#"><a href="secciones/servicios.html">servicios</a></li> 
                                     <li class="#"><a href="secciones/campanias.html">campañas</a></li>
-                                    <li class="#"><a href="secciones/formatos.html">formatos</a></li> 
+                                    <li class="#"><a href="secciones/formatos.html" >formatos</a></li> 
                                     <li class="#">|</li>
                                     <li class="#"><a href="secciones/contacto.html">contacto</a></li>
-                                </ul>
-                            </nav>
-                        </div>
+                                  </ul>
+                                </nav>
                     </div> 
-                </div>
         </div>
     </header>
 <!--Termina Menu+logo-->
@@ -273,39 +267,54 @@
 
 <!--Boton de ir hacia arriba-->
  
-    <a href="#" class="back-to-top"><i class="fas fa-chevron-up"></i></a>
+<a href="#" class="back-to-top"><i class="fas fa-chevron-up"></i></a>
 
-<!-- footer -->
+<!-- ======= Footer ======= -->
 <footer id="contacto"> <!-- COLOR -->
     <div class="area_footer_contacto_100"><!-- MARGIN 100 -->
-        <div class="contenedor_footer_contacto_90"> <!-- MARGIN 90 -->
+        <div class="container"> <!-- MARGIN 90 -->
             <div class="grid_footer">
-                <div class="col skyline_right_3_de_3">
-                    <img class="skyline" width="100%" height="auto" src="img/footer/3445986-02-01.svg"></img>
-                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 footer-info">
+                       <img src="img/logo/logo_gris-02.svg" width="80%" height="100%" class="#"></img>            
+                    </div>
+            <div class="col-lg-3 col-md-6 footer-contact">
                 <div class="col adress_right_1_de_3">
-                    <p><strong class="titulo--adress"><span>agencia</span></strong>
-                    <span>Av. Alicia Moreau de Justo 1150, 4to. Of. 410 B</span>
-                    <span>(C1107AAX) | Ciudad de Buenos Aires | Argentina</span>
-                    <span>Teléfono: (5411) 4341-4515 | 4516 </span>
-                    <span>Celular: (54911) 4578-0773 </span>
-                    <span>Email: <a class="mailto" href="mailto:info@nextmedia.com.ar?Subject=Interesado en OOH">info@nextmedia.com.ar</a></span></p>
+                <p><strong class="titulo--adress"><span>agencia</span></strong>
+                <span>Av. Alicia Moreau de Justo 1150, 4to. Of. 410 B</span>
+                <span>(C1107AAX) | Buenos Aires | Argentina</span>
+                <span>Teléfono: (5411) 4341-4515 | 4516 </span>
+                <span>Celular: (54911) 4578-0773 </span>
+                <span>Email: <a class="mailto" href="mailto:info@nextmedia.com.ar?Subject=Interesado en OOH">info@nextmedia.com.ar</a></span></p>
                 </div>
+            </div>
+            <div class="col-lg-2 col-md-6 footer-links">
                 <div class="col links_center_2_de_3">
-                    <ul>
-                        <li><strong class="titulo--links"><span>quick links</span></strong></li>
-                        <li><a href="index.html">home</a></li>
-                        <li><a href="secciones/servicios.html">servicios</a></li>
-                        <li><a href="secciones/formatos.html">formatos</a></li>
-                        <li><a href="secciones/campanias.html">campañas</a></li>
-                        <li><a href="secciones/contacto.html">contacto</a></li>
-                    </ul>
+                <ul>
+                    <li><strong class="titulo--links"><span>quick links</span></strong></li>
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="secciones/servicios.html">servicios</a></li>
+                    <li><a href="secciones/formatos.html">formatos</a></li>
+                    <li><a href="secciones/campanias.html">campañas</a></li>
+                    <li><a href="secciones/contacto.html">contacto</a></li>
+                </ul>
+            </div>
+          </div>       
+            <div class="col-lg-3 col-md-6 footer-newsletter">
+                <div class="col links_center_2_de_3">
+                <p><strong class="titulo--adress"><span>Newsletter</span></strong></p>
+                <p>Enterate de las últimas novedades.</p>
+                <form action="" method="post">
+                <input type="email" name="email" placeholder="info@nextmedia.com.ar" ><input type="submit" value="SUSCRIBITE" id="button-send" class="contacto_btn">
+                </form>
                 </div>
             </div>
         </div>
+     </div>
     </div>
+</div>
 </footer>
-<!-- TERMINA FOOTER_LINKS -->
+
 <!--  OK_ZOCALO_EMPIEZA EL FOOTER_COPYRIGHT -->
 <footer id="copyright">
     <div class="area_footer_copyright_100">
@@ -325,6 +334,11 @@
 </main>
 
 <!-- jQuery primero, popper, Bootstrap JS. --> 
+<script
+src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+crossorigin="anonymous"></script>
+
 <script src="js/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
@@ -341,12 +355,9 @@ new WOW().init();
   AOS.init();
 </script>
 
-<!--MobileNav.js-->
-<script src="js/mobile-nav.js"></script>
+<!--MobileNav.js
+<script src="js/mobile-nav.js"></script>-->
 
-
-<!--js buton_up
-<script src="js/script.js"></script>-->
 
  <!-- Optional FlexSlider Additions -->
  <script src="js/jquery.easing.js"></script>
@@ -363,7 +374,8 @@ new WOW().init();
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/ScrollToPlugin.min.js"></script>
   
 <!-- Template Main JS File -->
-  <script src="js/main.js"></script>
+<script src="js/main.js"></script>
+<script src="js/mobile-nav.js"></script>
 
 </body>
 </html>
