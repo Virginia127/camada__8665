@@ -8,59 +8,70 @@
 <!-- Favicon -->
      <link rel="shortcut icon" href="../img/favicon.png"/>
 
-<!--FONTS_ICONOS Google fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:wght@400;600;700;800&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400&display=swap" rel="stylesheet">
-    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700' rel='stylesheet' type='text/css'>
-    <link href="https://fonts.googleapis.com/css2?family=Hepta+Slab:wght@400;500&display=swap" rel="stylesheet">
-<!-- iconos -->
+<!--Google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,500;1,500&family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Montserrat:ital,wght@0,400;0,500;1,400;1,500;1,600&family=Open+Sans+Condensed:wght@300&family=Open+Sans:wght@400;600;700;800&family=Roboto+Condensed&display=swap" rel="stylesheet">  
+
+    <!-- iconos -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">    
     <script type="module" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule="" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.js"></script>
     <link rel="stylesheet" href="../css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/242764db17.js" crossorigin="anonymous"></script>
-    <!--whatsapp -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
+
 <!-- Stylesheet CSS File -->
     <link rel="stylesheet" href="../css/estilos.css"/>
     <link rel="stylesheet" href="../css/main.css">
-    <link href="../css/style.css" rel="stylesheet" type="text/css" /> <!--esto lo tengo que volar-->
     <link rel="stylesheet" href="../css/flexboxgrid.min.css">
-	<link rel="stylesheet" href="../css/flexslider.css" type="text/css" media="screen"/>
 
 <!--bootstrap-->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 
-<!-- Stylesheet Animation AOS CSS File --> 
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-<!--Stylesheet Animation animate.style/-->    <!--wow-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.0/animate.min.css"/>
-    <link rel="stylesheet" href="../css/animate.css">
-    <script src="../js/wow.min.js"></script>
+<!--Stylesheet Animation animate.style/-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.0/animate.min.css"/>
+<!--wow-->
+<link rel="stylesheet" href="css/animate.css">
+
+<!-- slider-->
+<link rel="stylesheet" href="../css/flexslider.css" type="text/css">
+<script src="https://code.jquery.com/jquery-latest.min.js"></script>
+<script src="../js/jquery.flexslider.js"></script>
+<script type="text/javascript" charset="utf-8">
+$(window).load(function() {
+$('.flexslider').flexslider({
+    touch: true,
+    pauseOnAction: false,
+    pauseOnHover: false,
+});
+});
+</script>
+
 </head>
 
 <body>
 
-<header id="header" class="fixed-top">
-    <div class="HEAD_PADRE">
-        <div class="menu_nav_ancho"> 
-            <div class="logo float-left">
-                <a href="../index.html" class="scrollto"> <img src="../img/logo_next_3.png" alt="isologo" class="img-fluid"></a>
-            </div>                
-            <nav class="main-nav menu_float_right d-none d-lg-block ">
-                <ul>
-                    <li class="active"><a href="../index.html">home</a></li>
-                    <li class="#"><a href="servicios.html">servicios</a></li>
-                    <li class="#"><a href="campanias.html">campañas</a></li>
-                    <li class="#"><a href="formatos.html">formatos</a></li>  
-                    <li class="#">|</li>
-                    <li class="#"><a href="contacto.html" class="active">contacto</a></li> 
-                </ul>
-            </nav>
-        </div>
-    </div>
-</header>
+    <body>
+        <header id="header" class="fixed-top">
+            <div class="container-fuid">
+                        <div class="menu_nav_ancho"> 
+                            <div class="logo float-left">
+                            <a href="index.html" class="logo"> <img src="../img/logo_next_3.png" alt="isologo" class="img-fluid"></a>
+                            </div>  
+                            <div class="menu menu_float_right">      
+                                <nav class="main-nav float-right d-none d-lg-block">
+                                    <ul>
+                                        <li><a href="../index.html">home</a></li>
+                                        <li class="#"><a href="servicios.html">servicios</a></li> 
+                                        <li class="#"><a href="campanias.html">campañas</a></li>
+                                        <li class="#"><a href="formatos.html" >formatos</a></li> 
+                                        <li class="#">|</li>
+                                        <li class="#"><a href="contacto.html"class="active">contacto</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                    </div> 
+            </div>
+        </header>
 <!--Termina Menu+logo-->
 
 <!--OK_ le da el margen superior para que scrolee-->
@@ -194,53 +205,53 @@
     </div>
 </footer>
 </main>
-<!-- BEGIN CORE JS FRAMEWORK -->
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-      crossorigin="anonymous"></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-      crossorigin="anonymous"></script>
+<!-- ANIMACIONES -->
+<link rel="stylesheet" href="../css/animate.css">
+<script src="../js/wow.min.js"></script>
+<script>new WOW().init();</script>
 
-    <!-- BEGIN JS PLUGIN -->
-    <script src="../js/plugins/pace/pace.min.js" type="text/javascript"></script>
-    <script src="a../js/plugins/jquery-unveil/jquery.unveil.min.js" type="text/javascript"></script>
-    <script type="text/javascript" src="../js/plugins/jquery-nicescroll/jquery.nicescroll.min.js"></script>
- 
+<!--Sligtbox/-->
+<script src="../js/lightbox.js"></script>
+
     <!-- Template Main JS File -->
     <script src="../js/main.js"></script>
     <script src="../js/mobile-nav.js"></script>
 
+<!--bootstrap-->
+<script src="../js/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 
-    <!-- END JS PLUGIN -->
-    <script src="../js/google_maps.js" type="text/javascript"></script>
-    <script type="text/javascript" src="../js/core.js"></script>
-<!--GOOGLE MAPS-->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!--AOS animación-->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
-    $(function () {
-        document.getElementById('myIframe').style.height = 'calc(100vh - ' + ($('#myIframe').offset().top + 25) + 'px)';            
-    });
+  AOS.init();
 </script>
 
-<!-- WOW ANIMACIONES -->
-<script src="../js/wow.js"></script>
-    <script>
-    new WOW().init();
-    </script>
-<!--AOS animación-->
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-    AOS.init();
-    </script>
-    
+<!--SLIDER_flexslider.js CSS File_https://woocommerce.com/flexslider/-->
+<link rel="stylesheet" href="../css/flexslider_basic.css" type="text/css">
+<script src="https://code.jquery.com/jquery-latest.min.js"></script>
+<script src="../js/jquery.flexslider.js"></script>
 
+
+<!--SLIDER_flexslider.js CSS File_https://woocommerce.com/flexslider/-->
+     <link rel="stylesheet" href="../css/flexslider.css" type="text/css">
+     <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+     <script src="../js/jquery.flexslider.js"></script>
+     <script type="text/javascript" charset="utf-8">
+     $(window).load(function() {
+        $('.flexslider').flexslider({
+          animation: "slide",
+          animationLoop: false,
+          itemWidth: 210,
+          itemMargin: 5
+        });
+      });
+      </script>
+<!-- Template Main JS File -->
+<script src="../js/main.js"></script>
+<script src="../js/simplescrollup.js"></script>
 </body>
-
 </html>
