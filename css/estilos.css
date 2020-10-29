@@ -2235,8 +2235,8 @@ a.mailto:hover {
 }
 
 .mobile-nav  ul {
-  display: none;
   overflow: hidden;
+  display:unset;
 }
 
 .mobile-nav  li {
