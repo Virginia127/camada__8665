@@ -398,7 +398,8 @@ a {
   text-decoration: none;
 }
 
-.contacto_btn-footer {
+/*BOTONES*/
+.contacto_btn {
   width: 77px;
   padding-top: 15px;
   margin-top: 20px;
@@ -419,6 +420,10 @@ a {
   text-overflow: clip;
   transition: background 0.2s cubic-bezier(0.25, 0.25, 0.75, 0.75);
   display: block;
+}
+
+.contacto_btn {
+  width: 57px;
 }
 
 #contacto .contacto_btn-footer a {

@@ -1697,13 +1697,49 @@ input[type=checkbox]:checked + label {
   color: #dd6a31;
   font-style: normal;
 }
+/*boton enviar contacto*/
+.contacto_btn{
+  width: 77px;
+  padding-top: 15px;
+  margin-top: 20px;
+  margin-left: 0px;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  cursor: pointer;
+  padding: 8px 8px 8px 8px;
+  border: none;
+  -webkit-border-radius: 25px;
+  border-radius: 3px;
+  font-family:'Open Sans', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color:#fff;
+  background:#ff6a00;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  -webkit-transition: background 0.2s cubic-bezier(0.25, 0.25, 0.75, 0.75);
+  -moz-transition: background 0.2s cubic-bezier(0.25, 0.25, 0.75, 0.75);
+  -o-transition: background 0.2s cubic-bezier(0.25, 0.25, 0.75, 0.75);
+  transition: background 0.2s cubic-bezier(0.25, 0.25, 0.75, 0.75);
+  display: block;
+}
 
-@media (min-width: 768px) {
-  .button {
-    padding-top: 2rem;
-    padding-bottom: 4rem;
+.contacto_btn a{
+  text-decoration: none;
+    outline:none;
   }
-
+.contacto_btn:hover {
+    color:#fff;
+    background: #007bff;
+    text-decoration: none;
+}
+@media (min-width: 768px) {
+  #button-send {
+  }
 }
 /*                  TERMINA CONTACTO
 --------------------------------------------------------------*/
@@ -1887,42 +1923,38 @@ input[type=checkbox]:checked + label {
     padding: 20px 0 15px 0;
     background-color: #a19d9f;
 }
+.footer-links, .footer-newsletter{
+  padding-top: 2rem;
+  
+}
 
-/*footer agencia*/
-
-#contacto .footer-contact{
+ .footer-contact{
   color: #31383f;
   text-transform: none;
-  font-family: 'Lato', sans-serif;
-  font-size: 1.5rem;
-  font-weight: 600;
   box-sizing: border-box;
-  align-self: end;
-  font-size: 0.75rem;
-  line-height: 1.15rem;
+  line-height: 1.4rem;
   padding-top: 2rem;
-}
-.adress {
-  display: block;
+  font-size: 0.85rem;
 }
 
-.titulo--adress {
+/*footer agencia*/
+#contacto .titulo--adress {
     font-family: 'Lato', sans-serif;
     font-size: 0.85rem;
-    font-weight: 650; 
+    font-weight: 800;
     margin-inline-end: 1.5rem;
     line-height: 1.3rem;
-    color: #31383f;
-    padding-top: 1.5rem;
     letter-spacing: 0.8px;
     text-transform: lowercase;
-    padding-bottom: 2rem;
+    color: #31383f;
+    padding-top: 1.5rem;
+    margin-bottom: 2rem;
 }
 
-.titulo--adress ::after{
+.titulo--adress::after{
     content:"";
     display: block;
-    width: 51px;
+    width: 55px;
     height: 3px;
     background: #31383f;
 }
@@ -1935,103 +1967,99 @@ input[type=checkbox]:checked + label {
 a.mailto:hover {
     color: #31383f;
     font-weight: 600;
-    font-style: italic;
     text-decoration: none;
 }
+.adress{
+  display: block;
+}
+
 /*footer_quick links*/
 
 .titulo--links{
   font-family: 'Lato', sans-serif;
   font-size: 0.85rem;
-  font-weight: 650; 
-  margin-inline-end: 1.5rem;
-  line-height: 1.3rem;
-  color: #31383f;
-  padding-top: 1.5rem;
+  font-weight: 800;
   letter-spacing: 0.8px;
   text-transform: lowercase;
-  padding-bottom: 2rem;
+  color: #31383f;
+  margin-bottom: 2rem;
+  margin-left: 2rem;
+
 }
-.titulo--links ::after{
+.titulo--links::after{
   content:"";
   display: block;
-  width: 73px;
+  width: 76px;
   height: 3px;
   background: #31383f;
+  margin-left: 2rem;
 }
-.footer-newsletter{
-  font-family: 'Lato', sans-serif;
-  font-size: 0.85rem;
-  font-weight: 650; 
-  margin-inline-end: 1.5rem;
-  line-height: 1.3rem;
-  color: #31383f;
-  padding-top: 1.5rem;
-  letter-spacing: 0.8px;
-  padding-bottom: 2rem;
-  }
-
-.titulo--adress--newsletter::after{
-content:"";
-display: block;
-width: 73px;
-height: 3px;
-background: #31383f;
-}
-
-.footer-links, .footer-newsletter{
-  padding-top: 2rem;
-  
-}
-
 .footer-links ul li {
-    list-style-type: none;
-    text-transform: none;
-    line-height: 1rem;
+  list-style-type: none;
+  text-transform: none;
+  margin-left: 2rem;
+  line-height: 1.14rem;
 }
 
 .footer-links  ul li a {
-    color: #31383f;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 0.75rem;
-    font-weight: 600;
+  color: #31383f;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 600;
 }
 .footer-links ul li a:hover {
-    text-decoration: none;
-    color:#fff;
-    font-size: 0.75rem;
+  text-decoration: none;
+  color:#fff;
 }
 
 
-.bajada_titulo--footer {
-  color: #31383f;
-  text-transform: none;
+/*footer_newsletter*/
+.footer-newsletter{
   font-family: 'Lato', sans-serif;
-  font-size: 0.7rem;
+  font-size: 0.85rem;
+  font-weight: 750;
+  letter-spacing: 0.8px;
+  text-transform: lowercase;
+  color: #31383f;
+  margin-bottom: 2rem;
+  margin-left: 0;
+  }
+
+.titulo--newsletter::after{
+  content:"";
+  display: block;
+  width: 76px;
+  height: 3px;
+  background: #31383f;
+}
+.bajada_news{
+  color: #31383f;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.8rem;
   font-weight: 600;
-  box-sizing: border-box;
-  align-self: end;
-  font-size: 0.75rem;
-  line-height: 1.15rem;
-  padding-top: 0.8rem;
+  padding-top:0.6rem;
+  font-style: normal;
 }
 
 #contacto  .footer-newsletter input[type="email"] {
   border: 0;
-  padding: 6px 8px;
-  width: 50%;
+  padding: 6px 6px;
+  width: 60%;
   border-radius: 3px;
   margin-top: 1rem;
 }
 
 #contacto .footer-newsletter input[type="submit"] {
   border: 0;
-  width: 30%;
-  padding: 6px 6px;
+  width: 40%;
+  padding: 8px 8px;
   text-align: center;
   color: #fff;
   transition: 0.3s;
   cursor: pointer;
+  background:#ff7a36;
+  margin-top: 1rem;
+  border-radius: 3px;
 }
 
 #contacto .footer-newsletter input[type="submit"]:hover {

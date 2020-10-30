@@ -58,7 +58,7 @@
     position:fixed;
     width:60px;
     height:60px;
-    bottom:19%;
+    bottom:29%;
     right:90px;
     background-color: $whats_click;
     border-color:$blanco;
@@ -84,7 +84,7 @@
   color:#007bff;
 }
 
-
+/*btn conocenos*/
 #home .home_btn_index {
   width: 100px;
   padding-top: 15px;
@@ -127,7 +127,7 @@
 
 /*BOTONES*/
 
-%btn {
+.contacto_btn-footer {
   width: 77px;
   padding-top: 15px;
   margin-top: 20px;
@@ -157,11 +157,22 @@
   display: block;
 }
 
-.contacto_btn{
+.contacto_btn-footer a{
+  text-decoration: none;
+    outline:none;
+  }
+.contacto_btn-footer:hover {
+    color:#fff;
+    background: $azul-boton-hover;
+    text-decoration: none;
+}
+
+/*footer news*/
+
+.contacto_btn-footer{
   @extend %btn;
   width: 57px;
 }
-
 
 #contacto .contacto_btn-footer a{
   text-decoration: none;
